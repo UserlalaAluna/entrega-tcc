@@ -1,5 +1,3 @@
-
-// Inicio de uma função 
 function toggleMenu() {
     // acessos os elementos a ser modificados
     const navLinks = document.querySelector('.nav-links')
@@ -40,5 +38,16 @@ window.addEventListener('click', (event) => {
   }
 
 })
-
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
 
