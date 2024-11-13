@@ -596,8 +596,58 @@ header {
         margin-left: 0;
     }
 }
+/* ao clicar em service */
+.aparecer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1000;
+    background-color: #575757cf;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cardizin{
+    height: 31.25rem;
+    width: 25rem;
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cardizin h2 {
+    margin-top: 1.25rem;
+    color: var(--cor-destaque);
+    margin-bottom: 1.25rem;
+}
+.img-card{
+    border: .125rem solid var(--cor-destaque);
+    border-radius: .625rem;
+    height: 16.875rem;
+    width: 80%;
 
+}
+.cardizin p {
+    text-align: center;
+    margin: 1.25rem;
+    color: var(--cor-neutra);
+}
+/* RESPONSIVIDADE APARECER */
+@media (max-width: 48rem) {
+    .cardizin{
+        width: 85%;
+    }
+}
 
+@media (max-width: 29.25rem) {
+    .cardizin{
+        width: 80%;
+    }
+}
 
 /* My team */
 .team-section {
@@ -728,7 +778,7 @@ header {
     }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 29.25rem) {
     .team-header h1 {
         font-size: 1.75rem;
     }
