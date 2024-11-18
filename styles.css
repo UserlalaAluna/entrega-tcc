@@ -981,12 +981,14 @@ header {
     font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: .625rem;
+    color: white;
 }
 
 .info-content p {
     font-size: 1.125rem;
     max-width: 37.5rem;
     margin: 0 auto 1.25rem;
+    color: white;
 }
 
 .cta-buttons {
